@@ -1,5 +1,6 @@
 # ipTracer
-A Python/Web ip trace visualiser
+A Python/Web ip trace visualiser.
+
 Only works on Windows (Sorry...)
 # Requirements
 ## Python 3.8.x

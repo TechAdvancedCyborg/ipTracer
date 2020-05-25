@@ -4,12 +4,11 @@ $( document ).ready(function() {
     L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(mymap);
-    L.tileLayer('https://api.maptiler.com/tiles/satellite-mediumres/{z}/{x}/{y}.jpg?key=iS9gs1LsLOJfuF3dQvLd', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(mymap);
 
 
-var pointList=[[48.8543,2.3527],[48.8047,2.28939],[48.8047,2.28939],[48.8047,2.28939],[48.8543,2.3527],[37.3382,-121.886]];
+
+
+var pointList=[[48.8543,2.3527],[48.8047,2.28939],[48.8047,2.28939],[48.8047,2.28939],[48.8047,2.28939],[48.8566,2.35222],[37.4851,-122.147],[37.4851,-122.147],[48.8566,2.35222],[48.8566,2.35222],[48.8566,2.35222]];
 var marker = L.marker([48.8543,2.3527]).addTo(mymap);
 marker.bindPopup("109.221.137.225<br>France Telecom Orange<br>AS3215 Orange S.A.");
 
@@ -22,11 +21,26 @@ marker.bindPopup("2a01:cfc4:0:400::b<br>Orange S.A.<br>");
 var marker = L.marker([48.8047,2.28939]).addTo(mymap);
 marker.bindPopup("2a01:cfc4:0:500::b<br>Orange S.A.<br>");
 
-var marker = L.marker([48.8543,2.3527]).addTo(mymap);
-marker.bindPopup("<br>France Telecom Orange<br>AS3215 Orange S.A.");
+var marker = L.marker([48.8047,2.28939]).addTo(mymap);
+marker.bindPopup("2a01:cfc4:0:500::7<br>Orange S.A.<br>");
 
-var marker = L.marker([37.3382,-121.886]).addTo(mymap);
-marker.bindPopup("2604:ed40:1000:1711:ac0d:44ff:fed3:4160<br>UpCloud USA Inc<br>AS25697 UpCloud USA Inc");
+var marker = L.marker([48.8566,2.35222]).addTo(mymap);
+marker.bindPopup("2001:688:0:3:3::6f<br>Orange S.A.<br>AS5511 Orange S.A.");
+
+var marker = L.marker([37.4851,-122.147]).addTo(mymap);
+marker.bindPopup("2620:0:1cff:dead:beef::78<br>Facebook, Inc.<br>AS32934 Facebook, Inc.");
+
+var marker = L.marker([37.4851,-122.147]).addTo(mymap);
+marker.bindPopup("2620:0:1cff:dead:beef::af7<br>Facebook, Inc.<br>AS32934 Facebook, Inc.");
+
+var marker = L.marker([48.8566,2.35222]).addTo(mymap);
+marker.bindPopup("2a03:2880:f01f:ffff::3b<br>Facebook, Inc.<br>AS32934 Facebook, Inc.");
+
+var marker = L.marker([48.8566,2.35222]).addTo(mymap);
+marker.bindPopup("2a03:2880:f11f:83:face:b00c:0:25de<br>Facebook, Inc.<br>AS32934 Facebook, Inc.");
+
+var marker = L.marker([48.8566,2.35222]).addTo(mymap);
+marker.bindPopup("2a03:2880:f11f:83:face:b00c:0:25de<br>Facebook, Inc.<br>AS32934 Facebook, Inc.");
 
 var firstpolyline = new L.Polyline(pointList, {
     color: 'red',
